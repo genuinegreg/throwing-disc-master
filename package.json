@@ -3,5 +3,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "repository": "https://github.com/genuinegreg/throwing-disc-master.git",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
