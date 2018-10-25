@@ -1,4 +1,5 @@
 import debug from '///dev.jspm.io/debug';
+import {level} from '../level/level.js'
 import {data} from '/data.js'
 
 
@@ -14,4 +15,19 @@ levels.component(levels.name, {
             this.levels = data
         }
     }
+})
+
+
+levels.config(function ($stateProvider, $urlRouterProvider) {
+
+    log('$stateProviderr', $stateProvider)
+
+    $stateProvider.state({
+        name: 'main.levels',
+        url: 'levels',
+        component: levels.name
+    })
+
+
+    $urlRouterProvider.otherwise('/levels')
 })

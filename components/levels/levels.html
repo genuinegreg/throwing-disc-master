@@ -1,4 +1,4 @@
-<h1>Levels test</h1>
+<h2>Levels</h2>
 <div ng-repeat="level in $ctrl.levels">
-    <h2 ng-href="">{{level.title}}</h2>
+    <a ui-sref="main.levels.level({ levelid: level.id })">{{level.title}}</a>
 </div>

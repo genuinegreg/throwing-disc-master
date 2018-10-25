@@ -20,3 +20,16 @@ main.component(main.name, {
     templateUrl: '/components/main/main.html',
     controller: MainController
 })
+
+
+main.config(function ($stateProvider) {
+
+    log('$stateProvider', $stateProvider)
+
+    $stateProvider.state({
+        name: 'main',
+        url: '/',
+        abstract: true,
+        component: main.name
+    })
+})

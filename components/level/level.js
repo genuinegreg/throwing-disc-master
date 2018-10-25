@@ -5,13 +5,26 @@ import {data} from '/data.js'
 const log = debug('tdm.level')
 
 
-export const levels = angular.module('levels', [])
+export const level = angular.module('level', [])
 
-levels.component(levels.name, {
+level.component(level.name, {
     templateUrl: '/components/level/level.html',
     controller: class MainController {
         constructor() {
-            this.levels = data
+            this.level = data
         }
     }
+})
+
+
+
+level.config(function ($stateProvider) {
+
+    log('$stateProviderr', $stateProvider)
+
+    $stateProvider.state({
+        name: 'main.levels.level',
+        url: '{levelId}',
+        component: level.name
+    })
 })

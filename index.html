@@ -2,22 +2,45 @@
 <head>
     <title>Trowing disc master</title>
     <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         .loader {
-            display: block;
+            display: flex;
+            margin: 0;
+            padding: 0;
             width: 100%;
             height: 100%;
 
+            background-image: linear-gradient(122deg, #8cca89, #3cbca6 40%, #168198);
+
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+            color: white;
+
+            font-family: sans-serif;
 
         }
     </style>
 </head>
 <body>
-<main>
+<ui-view>
     <div class="loader">
-        <h1>Loading Throwing disc master...</h1>
+        <h1>Throwing Disc Master</h1>
+        <h3>loading...</h3>
+        <a ui-sref="main">Main ?</a>
+        <a ui-sref="main.levels">Main levels</a>
     </div>
-</main>
+</ui-view>
 
+
+<link rel="stylesheet" href="style.css">
 <script type="module" src="index.js"></script>
 </body>
 </html>
