@@ -3,16 +3,21 @@ import {level} from '../level/level.js'
 import {data} from '/data.js'
 
 
-const log = debug('tdm.levels')
+const log = debug('tdm:levels')
+log('loaded...')
 
-
-export const levels = angular.module('levels', [])
+export const levels = angular.module('levels', [level.name])
 
 levels.component(levels.name, {
     templateUrl: '/components/levels/levels.html',
+    bindings: {
+        levels: '<'
+    },
     controller: class MainController {
-        constructor() {
-            this.levels = data
+        constructor($scope, $state) {
+            log('$scope', $scope)
+            log('$state', $state)
+            log(this.levels)
         }
     }
 })
@@ -20,12 +25,18 @@ levels.component(levels.name, {
 
 levels.config(function ($stateProvider, $urlRouterProvider) {
 
-    log('$stateProviderr', $stateProvider)
+    log('$stateProvider', $stateProvider)
 
     $stateProvider.state({
         name: 'main.levels',
-        url: 'levels',
-        component: levels.name
+        url: '/levels',
+        component: levels.name,
+        resolve: {
+            levels: function () {
+                return data
+            }
+
+        }
     })
 
 

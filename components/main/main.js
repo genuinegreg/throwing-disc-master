@@ -3,7 +3,7 @@ import {levels} from '../levels/levels.js'
 import {data} from '/data.js'
 
 
-const log = debug('tdm.main')
+const log = debug('tdm:main')
 
 
 export const main = angular.module('main', [levels.name])
@@ -28,7 +28,7 @@ main.config(function ($stateProvider) {
 
     $stateProvider.state({
         name: 'main',
-        url: '/',
+        url: '',
         abstract: true,
         component: main.name
     })

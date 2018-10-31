@@ -1,4 +1,6 @@
-<h2>Levels</h2>
-<div ng-repeat="level in $ctrl.levels">
-    <a ui-sref="main.levels.level({ levelid: level.id })">{{level.title}}</a>
-</div>
+<ui-view>
+    <h2>Levels</h2>
+    <div ng-repeat="level in $ctrl.levels">
+        <a ui-sref="main.levels.level({ levelId: level.title })">{{level.title}}</a>
+    </div>
+</ui-view>

@@ -1,0 +1,10 @@
+<a ui-sref="^">Retour</a>
+
+<h2>{{$ctrl.level.title}}</h2>
+<h3>{{$ctrl.level.objective *100 | number:0}}% de réussite</h3>
+
+<ul>
+    <li ng-repeat="exo in $ctrl.level.data">
+        {{exo}}</strong>
+    </li>
+</ul>
