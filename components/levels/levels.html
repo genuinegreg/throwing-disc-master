@@ -1,5 +1,5 @@
 <ui-view>
-    <h2>Levels</h2>
+    <md-subheader>Levels</md-subheader>
     <md-card ng-repeat="level in $ctrl.levels">
         <md-card-title>
             <md-card-title-text>
@@ -13,8 +13,7 @@
             <md-card-title-media>
             </md-card-title-media>
             <md-card-actions layout="row" layout-align="end center">
-                <md-button ui-sref="main.levels.level({ levelId: level.title })">Take the test</md-button>
-                <md-button>Action 2</md-button>
+                <md-button class="md-raised" ui-sref="main.levels.level({ levelId: level.title })">Take the test</md-button>
             </md-card-actions>
         </md-card-title>
     </md-card>
