@@ -1,6 +1,21 @@
 <ui-view>
     <h2>Levels</h2>
-    <div ng-repeat="level in $ctrl.levels">
-        <a ui-sref="main.levels.level({ levelId: level.title })">{{level.title}}</a>
-    </div>
+    <md-card ng-repeat="level in $ctrl.levels">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">
+                    {{level.title}}
+                </span>
+                <span class="md-subhead">
+                    {{level.description || 'Lorem ipsum dolor.'}}
+                </span>
+            </md-card-title-text>
+            <md-card-title-media>
+            </md-card-title-media>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ui-sref="main.levels.level({ levelId: level.title })">Take the test</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card-title>
+    </md-card>
 </ui-view>
