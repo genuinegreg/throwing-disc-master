@@ -1,0 +1,10 @@
+{
+  "name": "Throwing disc master",
+  "short_name": "TDM",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "An app to thow fribsee better",
+  "icons": [],
+  "related_applications": []
+}

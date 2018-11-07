@@ -1,5 +1,6 @@
 <html ng-app="root">
 <head>
+    <link rel="manifest" href="/manifest.webmanifest">
     <title>Trowing disc master</title>
     <style>
 
@@ -42,6 +43,11 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+<script type="application/javascript">
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+</script>
 <script defer type="module" src="index.js"></script>
 
 </body>
