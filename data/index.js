@@ -1,0 +1,86 @@
+export const data = [
+    {
+        id: '1_white',
+        title: 'Disque blanc',
+        description: 'fondamentaux court',
+        color: 'white',
+        // objective: .9,
+    },
+    {
+        id: '2_yellow',
+        title: 'Disque jaune',
+        description: 'fondamentaux court avec taux de réussite élevé',
+        color: 'yellow',
+        // objective: .95,
+    },
+    {
+        id: '3_orange',
+        title: 'Disque orange',
+        description: 'fondamentaux avec distance plus importante',
+        color: 'orange',
+        // objective: .9,
+    },
+    {
+        id: '4_pink',
+        title: 'Disque rose',
+        description: 'fondamentaux avec distance plus importante et taux de réussite élevé',
+        color: 'pink',
+        // objective: .95,
+    },
+    {
+        id: '5_litegreen',
+        title: "Disque vert clair",
+        description: "s'écarter du pied de pivot",
+        color: 'lightgreen',
+        // objective: .9,
+    },
+    {
+        id: '6_green',
+        title: "Disque vert foncé",
+        description: "renforcer l'écartement du pied de pivot + lancer bas",
+        color: 'green',
+        // objective: .95,
+    },
+    {
+        id: '7_liteblue',
+        title: "Disque bleu clair",
+        description: ": release loin, bas et haut",
+        color: 'liteblue',
+        // objective: .95,
+    },
+    {
+        id: '8_blue',
+        title: "Disque bleu foncé",
+        description: "release loin, bas et haut avec précision",
+        color: 'blue',
+        // objective: .95,
+    },
+    {
+        title: 'Disque violet',
+        description: 'lancers alternatifs',
+        color: 'purple',
+        // objective: .95,
+    },
+    {
+        id: '9_orange',
+        title: "Disque rouge",
+        description: "lancer alternatifs et dans l'espace",
+        color: 'red',
+        // objective: .95,
+    },
+    {
+        id: '0_brown',
+        title: 'Disque marron',
+        description: 'overall avec vitesse, précision et distance',
+        color: 'brown',
+        // objective: .95,
+    },
+    {
+
+        id: '1_black',
+        title: 'Disque noir',
+        description: 'overall avec vitesse, précision et distance, 100% de réussite',
+        color: 'black',
+        // objective: 1,
+    }
+]

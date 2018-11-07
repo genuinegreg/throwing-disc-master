@@ -1,18 +1,18 @@
 import debug from '///dev.jspm.io/debug';
 import {levels} from '../levels/levels.js'
-import {data} from '/data.js'
+import {dataService} from '/data/service.js'
 
 
 const log = debug('tdm:main')
 
 
-export const main = angular.module('main', [levels.name])
+export const main = angular.module('main', [levels.name, dataService.name])
 
 class MainController {
     constructor() {
 
         log('MainController loaded')
-        this.data = data;
+        // this.data = data;
     }
 }
 

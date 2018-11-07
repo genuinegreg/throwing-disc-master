@@ -1,20 +1,40 @@
-<ui-view>
+<style>
+    .levels content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .levels content md-card {
+        width: 48%
+    }
+
+    .levels .md-headline:first-letter,
+    .levels .md-subhead:first-letter {
+        text-transform: capitalize;
+    }
+</style>
+
+<ui-view class="levels">
     <md-subheader>Levels</md-subheader>
-    <md-card ng-repeat="level in $ctrl.levels">
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">
-                    {{level.title}}
-                </span>
-                <span class="md-subhead">
-                    {{level.description || 'Lorem ipsum dolor.'}}
-                </span>
-            </md-card-title-text>
-            <md-card-title-media>
-            </md-card-title-media>
-            <md-card-actions layout="row" layout-align="end center">
-                <md-button class="md-raised" ui-sref="main.levels.level({ levelId: level.title })">Take the test</md-button>
-            </md-card-actions>
-        </md-card-title>
-    </md-card>
+    <content>
+        <md-card ng-repeat="level in $ctrl.levels">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">
+                        {{level.title}}
+                    </span>
+                    <span class="md-subhead">
+                        {{level.description || 'Lorem ipsum dolor.'}}
+                    </span>
+                </md-card-title-text>
+                <md-card-title-media>
+                </md-card-title-media>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button class="md-raised" ui-sref="main.levels.level({ levelId: level.title })">Take the test
+                    </md-button>
+                </md-card-actions>
+            </md-card-title>
+        </md-card>
+    </content>
 </ui-view>

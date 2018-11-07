@@ -1,6 +1,6 @@
 import debug from '///dev.jspm.io/debug';
 import {level} from '../level/level.js'
-import {data} from '/data.js'
+import {data} from '/data/index.js'
 
 
 const log = debug('tdm:levels')
@@ -32,8 +32,8 @@ levels.config(function ($stateProvider, $urlRouterProvider) {
         url: '/levels',
         component: levels.name,
         resolve: {
-            levels: function () {
-                return data
+            levels: function (dataService) {
+                return dataService.getLevels()
             }
 
         }

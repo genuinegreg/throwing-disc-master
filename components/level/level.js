@@ -28,7 +28,7 @@ level.config(function ($stateProvider) {
         url: '/{levelId}',
         component: level.name,
         resolve: {
-            level: function (levels, $stateParams) {
+            level: function (levels, $stateParams, dataService) {
                 return levels.find((level) => level.title === $stateParams.levelId)
 
             }
