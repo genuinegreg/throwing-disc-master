@@ -6,12 +6,10 @@ export const data = [
         color: 'white',
         objective: .9,
         throws: [
-            [
-                '25 BH à 5m, pied de pivot derrière plot à une coudée',
-                '25 FH à 5m, pied de pivot derrière plot à une coudée',
-                '25 BH à 10m, pied de pivot derrière plot à une coudée',
-                '25 FH à 10m, pied de pivot derrière plot à une coudée'
-            ]
+            '25 BH à 5m, pied de pivot derrière plot à une coudée',
+            '25 FH à 5m, pied de pivot derrière plot à une coudée',
+            '25 BH à 10m, pied de pivot derrière plot à une coudée',
+            '25 FH à 10m, pied de pivot derrière plot à une coudée'
         ]
     },
     {
@@ -33,7 +31,7 @@ export const data = [
         description: 'fondamentaux avec distance plus importante',
         color: 'orange',
         objective: .9,
-        data: [
+        throws: [
             '20 BH à 10m, pied de pivot derrière plot à une coudée',
             '10 BH à 15m, pied de pivot derrière plot à une coudée',
             '10 BH à 20m, pied de pivot derrière plot à une coudée',
@@ -50,7 +48,7 @@ export const data = [
         description: 'fondamentaux avec distance plus importante et taux de réussite élevé',
         color: 'pink',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 10m, pied de pivot derrière plot à une coudée',
             '10 BH à 10m, feinte avec changement de pied de pivot derrière plots à une coudée',
             '10 BH à 15m, pied de pivot derrière plot à une coudée',
@@ -69,7 +67,7 @@ export const data = [
         description: "s'écarter du pied de pivot",
         color: 'lightgreen',
         objective: .9,
-        data: [
+        throws: [
             '10 BH à 10m, feinte avec changement de pied de pivot derrière plots à une coudée',
             '10 BH à 10m, pied de pivot derrière plot à deux coudées',
             '10 BH à 10m, pied de pivot derrière plot à trois coudées',
@@ -88,7 +86,7 @@ export const data = [
         description: "renforcer l'écartement du pied de pivot + lancer bas",
         color: 'green',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 10m, feinte avec changement de pied de pivot derrière plot à une coudée',
             '10 BH à 10m, pied de pivot derrière plot à trois coudées avec feinte une coudée',
             '10 FH à 10m, feinte avec changement de pied de pivot derrière plot à une coudée',
@@ -107,7 +105,7 @@ export const data = [
         description: ": release loin, bas et haut",
         color: 'liteblue',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 10m, pied de pivot derrière plot à trois coudées + feinte deux coudées',
             '10 BH à 10m, lancer le plus bas possible (minimum sous le genou)',
             '10 FH à 10m, pied de pivot derrière plot à trois coudées + feinte deux coudées',
@@ -125,7 +123,7 @@ export const data = [
         title: "Disque bleu foncé",
         description: "release loin, bas et haut avec précision",
         color: 'blue',
-        data: [
+        throws: [
             '10 BH à 20m, pied de pivot derrière plot à deux coudées + feinte',
             '10 FH à 20m, pied de pivot derrière plot à deux coudées + feinte',
             '10 BH à 20m, lancer le plus bas possible (minimum sous le genou) + feinte',
@@ -143,7 +141,7 @@ export const data = [
         description: 'lancers alternatifs',
         color: 'purple',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 10m, sans pied de pivot, face au lanceur',
             '10 FH à 10m, sans pied de pivot, face au lancer',
             '10 BH main gauche à 10m, sans pied de pivot, face au lanceur',
@@ -162,7 +160,7 @@ export const data = [
         description: "lancer alternatifs et dans l'espace",
         color: 'red',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 20m, sans pied de pivot, face au lanceur',
             '10 FH à 20m, sans pied de pivot, face au lancer',
             '10 BH main gauche à 20m, sans pied de pivot, face au lanceur',
@@ -181,7 +179,7 @@ export const data = [
         description: 'overall avec vitesse, précision et distance',
         color: 'brown',
         objective: .95,
-        data: [
+        throws: [
             '10 BH à 10m, pied de pivot avec feinte derrière plot à trois coudées, release rapide',
             '10 FH à 10m, pied de pivot avec feinte derrière plot à trois coudées, release rapide',
             '10 BH à 10m low release + feinte derrière plot à deux coudées, release rapide',
@@ -201,7 +199,7 @@ export const data = [
         description: 'overall avec vitesse, précision et distance, 100% de réussite',
         color: 'black',
         objective: 1,
-        data: [
+        throws: [
             '10 BH à 10m, pied de pivot avec feinte derrière plot à trois coudées, release rapide',
             '10 FH à 10m, pied de pivot avec feinte derrière plot à trois coudées, release rapide',
             '10 BH à 10m low release + feinte derrière plot à deux coudées, release rapide',

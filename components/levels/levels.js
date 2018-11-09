@@ -23,6 +23,17 @@ levels.component(levels.name, {
 })
 
 
+levels.component('tdmDisc', {
+    template: `
+        <div style="width: 3em; height: 3em; border-radius: 1.5em"
+        ng-style="{background: ($ctrl.color || 'grey')}"></div>
+`,
+    bindings: {
+        color: '<'
+    },
+})
+
+
 levels.config(function ($stateProvider, $urlRouterProvider) {
 
     log('$stateProvider', $stateProvider)

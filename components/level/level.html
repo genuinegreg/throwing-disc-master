@@ -1,10 +1,13 @@
-<a ui-sref="^">Retour</a>
+<md-content class="md-padding">
+    <md-button class="md-raised" ui-sref="^">Retour</md-button>
 
-<h2>{{$ctrl.level.title}}</h2>
-<h3>{{$ctrl.level.objective *100 | number:0}}% de réussite</h3>
+    <h2>{{$ctrl.level.title}} <small>{{$ctrl.level.objective *100 | number:0}}% de réussite</small></h2>
+    <p>{{$ctrl.level.description}}</p>
+    <h3></h3>
 
-<ul>
-    <li ng-repeat="exo in $ctrl.level.data">
-        {{exo}}</strong>
-    </li>
-</ul>
+    <ul>
+        <li ng-repeat="exo in $ctrl.level.throws">
+            {{exo}}</strong>
+        </li>
+    </ul>
+</md-content>
