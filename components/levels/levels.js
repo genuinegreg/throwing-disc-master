@@ -32,8 +32,8 @@ levels.config(function ($stateProvider, $urlRouterProvider) {
         url: '/levels',
         component: levels.name,
         resolve: {
-            levels: function (dataService) {
-                return dataService.getLevels()
+            levels: function () {
+                return data
             }
 
         }
