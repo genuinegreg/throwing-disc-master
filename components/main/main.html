@@ -1,6 +1,11 @@
 <md-toolbar>
     <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+        <md-button ng-if="$ctrl.$state.current.name !== 'main.levels'"
+                   class="md-icon-button" aria-label="Settings" ng-click="$ctrl.goBack()">
+            <md-icon>chevron_left</md-icon>
+        </md-button>
+        <md-button ng-if="$ctrl.$state.current.name === 'main.levels'"
+                   class="md-icon-button" aria-label="Settings" disabled="true">
             <md-icon>menu</md-icon>
         </md-button>
         <h2 flex md-truncate>Throwing disc master</h2>

@@ -1,5 +1,4 @@
 import debug from '///dev.jspm.io/debug';
-import {data} from '/data.js'
 
 
 const log = debug('tdm:levels:level')

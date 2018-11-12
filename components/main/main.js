@@ -8,10 +8,15 @@ const log = debug('tdm:main')
 export const main = angular.module('main', [levels.name])
 
 class MainController {
-    constructor() {
+    constructor($state) {
 
-        log('MainController loaded')
-        // this.data = data;
+        log('MainController loaded', $state.current)
+
+        this.$state = $state
+    }
+
+    goBack() {
+        window.history.back();
     }
 }
 
